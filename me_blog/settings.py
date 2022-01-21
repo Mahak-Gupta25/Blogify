@@ -30,7 +30,7 @@ SECRET_KEY = config['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app-blogify.herokuapp']
+ALLOWED_HOSTS = ['app-blogify.herokuapp.com']
 
 
 # Application definition
