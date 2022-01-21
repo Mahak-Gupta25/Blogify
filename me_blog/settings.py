@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import json
+import django_heroku
 
 with open('config.json') as config_file:
     config = json.load(config_file)
@@ -141,3 +142,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'
 
 LOGIN_URL = 'login'
+
+django_heroku.settings(locals())
